@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="quuz02.html" method="POST">
+        <table>
+        <tr>
+            <td colspan="2">다음 <b style="background-color: chocolate;">내용에 맞게 입력</b> 하시오.</td>
+                <td rowspan="5"><img src="img/img.jpg" width="200px" height="150px"></td>
+            </tr>
+        <tr>
+                <td colspan="2">
+                    전공 분야를 입력하세요. <select name="select">
+                        <option value="sw">소프트웨어 </option>
+                        <option value="el">전기</option>
+                        <option value="nw">네트워크</option>
+                    </select> &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    이름
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    아이디
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    비밀번호
+                </td>
+                <td>
+                    <input type="password" name="pwd">
+                </td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>성별 조사</legend>
+            여성 <input type="radio" name="gender" value="woman" checked>
+            남성 <input type="radio" name="gender" value="man">
+        </fieldset>
+        <fieldset>
+            <legend>취미 조사</legend>
+            책읽기 <input type="checkbox" name="hobby" value="book">
+            공부하기 <input type="checkbox" name="hobby" value="study">
+            책 읽으며 공부하기 <input type="checkbox" name="hobby" value="book&study">
+            컴퓨터 <input type="checkbox" name="hobby" value="computer">
+        </fieldset>
+        <fieldset>
+            <legend>하고 싶은 말</legend>
+            <textarea name="coment" rows="3" cols="60"></textarea>
+        </fieldset>
+        <input type="submit" value="완료">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>
